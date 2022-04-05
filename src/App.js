@@ -14,10 +14,10 @@ function App() {
       <div className='card--layout'>
         <Card
           img={ katie }
-          name="katie zafers"
+          name="katie Zaferes"
           rating='5.0'
           people='6'
-          text='life lesson from katie zafers'
+          text='life lesson from katie Zaferes'
           price='136'
         />
         <Card
