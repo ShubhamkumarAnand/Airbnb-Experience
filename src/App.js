@@ -13,7 +13,7 @@ function App() {
         img={katie}
         name="katie zafers"
         rating='5.0'
-        prople='6'
+        people='6'
         text='life lesson from katie zafers'
         price='136'
       />
