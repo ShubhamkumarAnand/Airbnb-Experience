@@ -16,25 +16,25 @@ function App() {
           img={ katie }
           name="katie Zaferes"
           rating='5.0'
-          people='6'
-          text='life lesson from katie Zaferes'
-          price='136'
+          reviewCount={6}
+          title='life lesson from katie Zaferes'
+          price={136}
         />
         <Card
           img={wedding}
           name='wedding-photography'
           rating='5.0'
-          people='30'
-          text='Learn wedding photography'
-          price='125'
+          reviewCount={30}
+          title='Learn wedding photography'
+          price={125}
         />
         <Card
           img={ mountain }
           name='mountain-bike'
           rating='4.8'
-          people='2'
-          text='Group mountain biking'
-          price='50'
+          reviewCount={ 2 }
+          title='Group mountain biking'
+          price={ 50 }
         />
       </div>
 
