@@ -2,42 +2,27 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero'
 import Card from './components/Card'
-import katie from './images/katie-zafers.png'
-import wedding from './images/wedding-photography.png'
-import mountain from './images/mountain-bike.png'
+import data from './data'
 
 function App() {
+  const cards = data.map(item => {
+    return (
+      <Card
+        img={ item.coverImg }
+        rating={ item.stats.rating }
+        reviewCount={ item.stats.reviewCount }
+        title={ item.title }
+        price={ item.price }
+        location={item.location}
+    />
+  )})
   return (
     <div>
       <Navbar />
       <Hero />
       <div className='card--layout'>
-        <Card
-          img={ katie }
-          name="katie Zaferes"
-          rating='5.0'
-          reviewCount={6}
-          title='life lesson from katie Zaferes'
-          price={136}
-        />
-        <Card
-          img={wedding}
-          name='wedding-photography'
-          rating='5.0'
-          reviewCount={30}
-          title='Learn wedding photography'
-          price={125}
-        />
-        <Card
-          img={ mountain }
-          name='mountain-bike'
-          rating='4.8'
-          reviewCount={ 2 }
-          title='Group mountain biking'
-          price={ 50 }
-        />
+        {cards}        
       </div>
-
     </div>
 
   )
